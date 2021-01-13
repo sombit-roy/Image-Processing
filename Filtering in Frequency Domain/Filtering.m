@@ -16,6 +16,10 @@ for x=1:P
 end
 
 F = fft2(I);
+figure
+imagesc(log(1+abs(F)));
+colormap("gray");
+title("Fourier transformed image");
 
 for u=1:P
     for v=1:Q
